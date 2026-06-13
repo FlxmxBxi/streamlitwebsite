@@ -2,7 +2,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="API KEY",
+    api_key=st.secrets["API_KEY],
 )
 #secondary code if you have one "API KEY"
 
