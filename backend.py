@@ -1,6 +1,6 @@
 from openai import OpenAI
 import streamlit as s
-st.set_page_config(page_title="Damians's AI", page_icon="🚀")
+s.set_page_config(page_title="Damians's AI", page_icon="🚀")
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key = s.secrets["API_KEY"],
