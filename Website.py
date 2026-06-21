@@ -12,13 +12,13 @@ with s.chat_message(name = "Bot", avatar="🤖", width="stretch"):
 input = s.chat_input("Type your message")
 
 if Current_Chat not in s.session_state:
-    if Current_Chat = "Genius":
+    if Current_Chat == "Genius":
         s.session_state[Current_Chat] = [{"role": "system", "content": "No Emojis, You answer every question seriously without jokes or humor ( Maybe a little )"}]
 
-    if Current_Chat = "Average":
+    if Current_Chat == "Average":
         s.session_state[Current_Chat] = [{"role": "system", "content": "you answer each question correctly with jokes and humor, but add the humor in a natural way"}]
     
-    if Current_Chat = "Stupid":
+    if Current_Chat == "Stupid":
         s.session_state[Current_Chat] = [{"role": "system", "content": "You are single handedly most retar*ed AI, even a 3 year old toddler is smarter, you make the unfunniest jokes and answer every question wrong, evern making some spelling mistakes"}]
     
 # Display chat messages from history on app rerun
