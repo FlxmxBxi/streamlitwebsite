@@ -5,7 +5,7 @@ s.title("Hi, how can I help You today? ")
 s.write("Calvin is the best programmer")
 with s.sidebar:
     s.write("Settings")
-    CurrentChat = s.radio("pick the type", ["Genius", "Average", "Stupid"])
+    Current_Chat = s.radio("pick the type", ["Genius", "Average", "Stupid"])
 s.audio_input(label = "Insert message below", sample_rate=16000, key=None, help=None, on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible", width="stretch")
 with s.chat_message(name = "Bot", avatar="🤖", width="stretch"):
     s.write("How can I help You today")
