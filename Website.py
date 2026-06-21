@@ -33,5 +33,5 @@ if input:
 
     with s.chat_message(name = "assistant", width ="stretch"):
         chatt = s.write_stream(chat(s.session_state[Current_Chat])) 
-    s.session_state[Current_Chat].append({"role": "user", "content": chatt})
+    s.session_state[Current_Chat].append({"role": "assistant", "content": chatt})
 
